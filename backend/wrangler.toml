@@ -1,0 +1,23 @@
+name = "backend"
+compatibility_date = "2023-12-01"
+
+[vars]
+FRONTEND_URL = "http://localhost:3000"
+SQLITE_URL = "libsql://brame-lappe-marc-andre.turso.io"
+SQLITE_TOKEN = "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3MTk1MjMxNTgsImlkIjoiZjg1Mjk4YzItMGIzNi00MDMwLWI4YzMtZGU4ZDQ0YWFhNzNiIn0.bY5wWCOo10JSpOiMslDbNwR0NEkiuBLsIzg1o9rp6dmxJkLXxsDl_c446Bhzs0AlBHbCpLte1eirvk4SxzNCDQ"
+
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "my-bucket"
+
+# [[d1_databases]]
+# binding = "DB"
+# database_name = "my-database"
+# database_id = ""
+
+# [ai]
+# binding = "AI"

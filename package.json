@@ -1,0 +1,24 @@
+{
+    "private": true,
+    "workspaces": [
+        "frontend",
+        "backend"
+    ],
+    "scripts": {
+        "dev:frontend": "npm run dev -w frontend",
+        "dev:backend": "npm run dev -w backend",
+        "build": "npm run build -w frontend && npm run build -w backend",
+        "deploy": "npm run deploy:frontend && npm run deploy:backend",
+        "deploy:frontend": "npm run build -w frontend && gh-pages -d frontend/dist",
+        "deploy:backend": "npm run deploy -w backend",
+        "test": "dotenv -e .env.test jest"
+    },
+    "devDependencies": {
+        "@cloudflare/workers-types": "^4.20240620.0",
+        "@types/jest": "^29.5.12",
+        "dotenv": "^16.4.5",
+        "dotenv-cli": "^7.4.2",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.5"
+    }
+}
